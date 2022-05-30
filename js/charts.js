@@ -136,7 +136,7 @@ function buildCharts(sample) {
     var trace = {
       value: wfreqs,
       type: "indicator",
-      mode: "gauge+number",
+      mode: "gauge+number+delta",
       title: {text: "<b> Belly Button Washing Frequency </b> <br></br> Scrubs Per Week"},
       gauge: {
         axis: {range: [null,10], dtick: "2"},
@@ -146,8 +146,8 @@ function buildCharts(sample) {
           {range: [0, 2], color: "red"},
           {range: [2, 4], color: "orange"},
           {range: [4, 6], color: "yellow"},
-          {range: [6, 8], color: "lightgreen"},
-          {range: [8, 10], color: "green"}
+          {range: [6, 8], color: "lightblue"},
+          {range: [8, 10], color: "blue"}
         ],
         dtick: 2
       }
